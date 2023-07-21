@@ -115,3 +115,40 @@ print(states) #['Alabama', 'California', 'Florida', 'Illinois', 'Indiana', 'New 
 
 states.sort(key=len)
 print(states) #['Alabama', 'Florida', 'Indiana', 'Illinois', 'New York', 'California', 'Washington']
+
+#.clear()
+#list.clear() -> wipes entire list
+
+print(states) #['Alabama', 'Florida', 'Indiana', 'Illinois', 'New York', 'California', 'Washington']
+states.clear()
+print(states) #[]
+
+#sorted()
+#sorted(list) -> returns a new list containing all items from the iterable in ascending order
+
+numbers = [23, 12, 76, 43, 87, 42, 28, 52]
+print(numbers) #[23, 12, 76, 43, 87, 42, 28, 52]
+print(sorted(numbers)) #[12, 23, 28, 42, 43, 52, 76, 87]
+
+#'in' keyword
+
+instructors = ['Brian', 'Tatyana', 'Sam', 'Shoha', 'Ryan']
+
+if 'Brian' in instructors:
+    print(True)
+#True
+
+#'not in' keywords
+
+if 'Derek' not in instructors:
+    print(True)
+#True
+
+#removing instances with a loop
+#while, remove
+
+numbers = [1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3]
+
+while 1 in numbers:
+    numbers.remove(1)
+print(numbers) #[2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3]
